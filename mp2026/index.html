@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>어머니와 함께하는 목포 1박 2일 여행 일정</title>
+    <title>목포 1박 2일 여행 일정</title>
     <!-- 모바일 가독성 최우선 폰트 (Pretendard) 불러오기 -->
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
     
@@ -63,7 +63,7 @@
             border: 1px solid #ebdcd0;
         }
         
-        /* 타임라인 스타일 - 간격 여유 조율 */
+        /* 타임라인 및 코스별 가로 구분선 스타일 */
         .timeline {
             border-left: 3px solid #f5a665;
             padding-left: 18px;
@@ -71,11 +71,15 @@
             margin-top: 10px;
         }
         .time-block {
-            margin-bottom: 32px; /* 다닥다닥 붙어있지 않도록 여백 대폭 확대 */
+            margin-bottom: 28px;
+            padding-bottom: 24px;
+            border-bottom: 1px dashed #e8d0be; /* 코스 구분 가로선 추가 */
             position: relative;
         }
         .time-block:last-child {
             margin-bottom: 10px;
+            padding-bottom: 0;
+            border-bottom: none; /* 마지막 항목 가로선 제거 */
         }
         .time-title {
             font-weight: 700;
@@ -260,7 +264,7 @@
 
             <div class="time-block">
                 <div class="drive-time">🚗 케이블카 ➔ 숙소 인근 식당 (차량 약 10분 소요)</div><br>
-                <span class="time-title">19:00</span><br>
+                <span class="time-title">18:30</span><br>
                 숙소 인근 저녁 식사 & 반주 🍶 : <span class="place-title">목포연희네낙지꼬막집 유달산케이블카점</span> (낙지/꼬막 요리)
                 <div class="address-text">
                     📍 주소: 전남 목포시 유달산길 20<br>
@@ -270,7 +274,7 @@
 
             <div class="time-block">
                 <div class="drive-time">🚶 식당 ➔ 로데오광장/숙소 (도보/차량 5분)</div><br>
-                <span class="time-title">20:30</span><br>
+                <span class="time-title">20:00</span><br>
                 원도심 로데오거리 및 먹자골목 도보 산책 ➔ <span class="place-title">호텔 우인</span> 체크인 및 휴식 푹 쉬기 🌙
                 <div class="address-text">
                     📍 호텔 우인 주소: 전남 목포시 영산로59번길 16<br>
