@@ -47,7 +47,8 @@
             margin-left: 10px;
         }
         .time-block {
-            margin-bottom: 18px;
+            margin-bottom: 20px;
+            position: relative;
         }
         .time-title {
             font-weight: bold;
@@ -63,6 +64,17 @@
             margin-top: 2px;
             padding-left: 10px;
             border-left: 2px solid #cbd5e1;
+        }
+        .drive-time {
+            display: inline-block;
+            background-color: #f1f5f9;
+            color: #475569;
+            font-size: 0.82em;
+            font-weight: bold;
+            padding: 2px 8px;
+            border-radius: 12px;
+            margin-bottom: 6px;
+            border: 1px solid #e2e8f0;
         }
 
         /* 레이아웃 맵 스타일 */
@@ -143,35 +155,49 @@
         <h3>8월 13일 (1일 차) : 익산 출발 ➔ 원도심 ➔ 대형 카페 ➔ 케이블카/해상데크 ➔ 야경</h3>
         <div class="timeline">
             <div class="time-block">
-                <span class="time-title">10:50</span> - <b>익산에서 목포로 출발</b> (차량 이동 소요시간: 약 1시간 30분~40분)
+                <span class="time-title">10:50</span> - <b>익산에서 목포로 출발</b>
             </div>
+            
             <div class="time-block">
+                <div class="drive-time">🚗 익산 ➔ 목포 식당 (차량 약 1시간 30분~40분 소요)</div><br>
                 <span class="time-title">12:30</span> - 목포 도착 및 점심 식사 : <span class="place-title">식당 '어락'</span> (보리굴비, 남도 한정식, 낙지)
                 <div class="address-text">📍 주소: 전남 목포시 평화로 108</div>
             </div>
+
             <div class="time-block">
+                <div class="drive-time">🚗 어락 ➔ 연희네슈퍼 (차량 약 15분 소요)</div><br>
                 <span class="time-title">14:00</span> - 근대역사거리 차창 관람 및 <span class="place-title">연희네슈퍼</span> 사진 촬영
                 <div class="address-text">📍 주소: 전남 목포시 시로 13-1</div>
             </div>
+
             <div class="time-block">
+                <div class="drive-time">🚗 연희네슈퍼 ➔ 대형 카페 (차량 약 5~10분 소요)</div><br>
                 <span class="time-title">14:30</span> - 뷰 좋은 대형 카페 휴식 (택1)
                 <div class="address-text">📍 카페 석산: 전남 목포시 고하대로 680</div>
                 <div class="address-text">📍 C27 다운타운 목포점: 전남 목포시 해양대학로 139</div>
             </div>
+
             <div class="time-block">
+                <div class="drive-time">🚗 카페 ➔ 케이블카 북항승강장 (차량 약 3~5분 소요)</div><br>
                 <span class="time-title">16:00</span> - <span class="place-title">목포해상케이블카 북항승강장</span> ➔ <span class="place-title">고하도전망대 & 해상데크</span> 산책
                 <div class="address-text">📍 북항승강장: 전남 목포시 해양대학로 240</div>
                 <div class="address-text">📍 고하도전망대/데크: 전남 목포시 고하도안길 182</div>
             </div>
+
             <div class="time-block">
+                <div class="drive-time">🚗 케이블카 승강장 ➔ 저녁 식당/원도심 (차량 약 10~15분 소요)</div><br>
                 <span class="time-title">19:00</span> - 저녁 식사 (원도심 또는 하당 낙지 전문점)
             </div>
+
             <div class="time-block">
+                <div class="drive-time">🚗 식당 ➔ 야경 코스 (차량 약 5~10분 소요)</div><br>
                 <span class="time-title">20:00</span> - 야경 감상 : <span class="place-title">갓바위 해상보행교</span> ➔ <span class="place-title">평화광장 춤추는 바다분수</span>
                 <div class="address-text">📍 갓바위 해상보행교: 전남 목포시 남농로 105</div>
                 <div class="address-text">📍 평화광장: 전남 목포시 평화로 82</div>
             </div>
+
             <div class="time-block">
+                <div class="drive-time">🚗 평화광장 ➔ 호텔 우인 (차량 약 15분 소요)</div><br>
                 <span class="time-title">21:00</span> - 숙소 체크인 : <span class="place-title">호텔 우인</span>
                 <div class="address-text">📍 주소: 전남 목포시 영산로59번길 16</div>
             </div>
@@ -182,15 +208,21 @@
             <div class="time-block">
                 <span class="time-title">08:30</span> - 호텔 체크아웃 및 아침 식사
             </div>
+
             <div class="time-block">
+                <div class="drive-time">🚗 호텔 우인 ➔ 유달산 노적봉 (차량 약 5분 소요)</div><br>
                 <span class="time-title">09:30</span> - <span class="place-title">유달산 노적봉</span> 등산 및 산책 (관운각/일등바위 코스)
                 <div class="address-text">📍 주소: 전남 목포시 유달산길 56</div>
             </div>
+
             <div class="time-block">
+                <div class="drive-time">🚗 유달산 ➔ 남도락 식당 (차량 약 15분 소요)</div><br>
                 <span class="time-title">11:30</span> - 점심 식사 : <span class="place-title">식당 '남도락'</span> (낙지 요리, 정갈한 한식)
                 <div class="address-text">📍 주소: 전남 목포시 미항로 143</div>
             </div>
+
             <div class="time-block">
+                <div class="drive-time">🚗 남도락 ➔ 익산 복귀 (차량 약 1시간 30분~40분 소요)</div><br>
                 <span class="time-title">13:00</span> - <b>익산으로 복귀 출발</b>
             </div>
         </div>
