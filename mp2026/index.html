@@ -15,95 +15,102 @@
         }
         body {
             font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
-            line-height: 1.6;
-            color: #222222; /* 아주 선명한 본문 글자색 */
+            line-height: 1.75;
+            color: #222222;
             max-width: 800px;
             margin: 0 auto;
-            padding: 15px;
+            padding: 20px 16px;
             background-color: #f7f5f0;
         }
         h1 {
-            font-size: 1.5em;
+            font-size: 1.55em;
             color: #b84300;
             text-align: center;
             background: #ffffff;
-            padding: 18px 12px;
-            border-radius: 16px;
+            padding: 20px 14px;
+            border-radius: 18px;
             border: 2px solid #f2c4a2;
-            margin-bottom: 20px;
+            margin-bottom: 28px;
             font-weight: 700;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            box-shadow: 0 3px 10px rgba(0,0,0,0.04);
         }
         h2 {
-            font-size: 1.25em;
+            font-size: 1.28em;
             color: #4a2810;
             background-color: #fceade;
-            padding: 8px 16px;
+            padding: 10px 18px;
             border-radius: 12px;
-            margin-top: 15px;
-            margin-bottom: 15px;
+            margin-top: 10px;
+            margin-bottom: 20px;
             display: inline-block;
             font-weight: 700;
         }
         h3 {
             color: #b84300;
-            border-left: 4px solid #f5a665;
-            padding-left: 10px;
-            font-size: 1.1em;
-            margin-top: 15px;
-            margin-bottom: 15px;
+            border-left: 5px solid #f5a665;
+            padding-left: 12px;
+            font-size: 1.15em;
+            margin-top: 25px;
+            margin-bottom: 22px;
             font-weight: 700;
         }
         .section {
             background: #ffffff;
-            padding: 16px;
-            border-radius: 16px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            margin-bottom: 20px;
+            padding: 22px 18px;
+            border-radius: 18px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+            margin-bottom: 28px;
             border: 1px solid #ebdcd0;
         }
         
-        /* 타임라인 스타일 */
+        /* 타임라인 스타일 - 간격 여유 조율 */
         .timeline {
             border-left: 3px solid #f5a665;
-            padding-left: 14px;
-            margin-left: 6px;
+            padding-left: 18px;
+            margin-left: 8px;
+            margin-top: 10px;
         }
         .time-block {
-            margin-bottom: 20px;
+            margin-bottom: 32px; /* 다닥다닥 붙어있지 않도록 여백 대폭 확대 */
+            position: relative;
+        }
+        .time-block:last-child {
+            margin-bottom: 10px;
         }
         .time-title {
             font-weight: 700;
             color: #a33800;
             background: #ffe8d6;
-            padding: 3px 8px;
-            border-radius: 6px;
-            font-size: 0.95em;
+            padding: 4px 10px;
+            border-radius: 8px;
+            font-size: 0.98em;
             display: inline-block;
-            margin-bottom: 4px;
+            margin-bottom: 8px;
         }
         .place-title {
             font-weight: 700;
             color: #111111;
-            font-size: 1.05em;
+            font-size: 1.08em;
+            display: inline-block;
+            margin-top: 2px;
         }
         .address-text {
-            font-size: 0.9em;
+            font-size: 0.92em;
             color: #444444;
-            margin-top: 6px;
-            padding-left: 8px;
-            border-left: 2px solid #f7ddcc;
-            line-height: 1.5;
+            margin-top: 10px;
+            padding-left: 12px;
+            border-left: 3px solid #f7ddcc;
+            line-height: 1.6;
         }
         .map-link {
             display: inline-block;
-            margin-top: 4px;
+            margin-top: 6px;
             color: #be3b13;
             text-decoration: none;
             font-weight: 700;
-            font-size: 0.88em;
+            font-size: 0.9em;
             background: #fff0eb;
-            padding: 3px 8px;
+            padding: 4px 10px;
             border-radius: 6px;
             border: 1px solid #f5a665;
         }
@@ -111,11 +118,11 @@
             display: inline-block;
             background-color: #f7ebe1;
             color: #633614;
-            font-size: 0.85em;
+            font-size: 0.88em;
             font-weight: 700;
-            padding: 3px 8px;
+            padding: 4px 10px;
             border-radius: 8px;
-            margin-bottom: 6px;
+            margin-bottom: 10px;
             border: 1px solid #f0d5c2;
         }
 
@@ -123,20 +130,20 @@
         .map-container {
             display: flex;
             flex-direction: column;
-            gap: 12px;
-            margin-top: 12px;
+            gap: 16px;
+            margin-top: 16px;
         }
         .map-zone {
             background-color: #fffbf7;
             border: 1px solid #f0d5c2;
-            border-radius: 12px;
-            padding: 12px;
+            border-radius: 14px;
+            padding: 16px;
         }
         .map-zone-title {
-            font-size: 1.1em;
+            font-size: 1.15em;
             text-align: center;
-            padding-bottom: 6px;
-            margin-bottom: 10px;
+            padding-bottom: 8px;
+            margin-bottom: 12px;
             border-bottom: 2px solid #f5a665;
             font-weight: 700;
         }
@@ -146,33 +153,33 @@
         
         .pin-item {
             background: white;
-            padding: 8px 10px;
-            margin-bottom: 6px;
+            padding: 10px 12px;
+            margin-bottom: 8px;
             border-radius: 8px;
-            border-left: 3px solid #f5a665;
-            font-size: 0.92em;
+            border-left: 4px solid #f5a665;
+            font-size: 0.95em;
             color: #222222;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+            box-shadow: 0 1px 4px rgba(0,0,0,0.04);
         }
 
-        /* 테이블 스타일 (모바일 자동스크롤 조치) */
+        /* 테이블 스타일 */
         .table-wrapper {
             width: 100%;
             overflow-x: auto;
-            margin-top: 10px;
+            margin-top: 14px;
         }
         table {
             width: 100%;
             border-collapse: collapse;
             background: white;
             border-radius: 8px;
-            min-width: 500px; /* 깨짐 방지 최소너비 */
+            min-width: 500px;
         }
         th, td {
             border: 1px solid #e8c8b0;
-            padding: 8px 10px;
+            padding: 10px 12px;
             text-align: left;
-            font-size: 0.9em;
+            font-size: 0.92em;
             color: #222222;
         }
         th {
@@ -182,9 +189,9 @@
         }
         .category-tag {
             display: inline-block;
-            padding: 2px 6px;
+            padding: 3px 7px;
             border-radius: 6px;
-            font-size: 0.82em;
+            font-size: 0.85em;
             font-weight: 700;
             color: white;
             white-space: nowrap;
@@ -206,12 +213,14 @@
         <h3>8월 13일 (1일 차) : 독천골 낙지 ➔ 바다뷰카페 ➔ 원도심 ➔ 케이블카/고하도 ➔ 숙소 근처 저녁(반주🍶) & 로데오거리 산책</h3>
         <div class="timeline">
             <div class="time-block">
-                <span class="time-title">10:50</span> - <b>익산에서 목포로 출발 🚗</b>
+                <span class="time-title">10:50</span><br>
+                <b>익산에서 목포로 출발 🚗</b>
             </div>
             
             <div class="time-block">
                 <div class="drive-time">🚗 익산 ➔ 독천골 (차량 약 1시간 30분 소요)</div><br>
-                <span class="time-title">12:30</span> - 목포 도착 및 점심 식사 : <span class="place-title">독천골</span> (낙지탕탕이 / 낙지볶음 / 연포탕)
+                <span class="time-title">12:30</span><br>
+                목포 도착 및 점심 식사 : <span class="place-title">독천골</span> (낙지탕탕이 / 낙지볶음 / 연포탕)
                 <div class="address-text">
                     📍 주소: 전남 목포시 미항로 197<br>
                     <a href="https://naver.me/GOPe4acw" target="_blank" class="map-link">네이버 지도 보기 🗺️</a>
@@ -220,7 +229,8 @@
 
             <div class="time-block">
                 <div class="drive-time">🚗 독천골 ➔ 갓바위/평화광장 ➔ 차오르다 카페 (차량 약 3~5분 소요)</div><br>
-                <span class="time-title">13:30</span> - 식사 후 산책 및 바다 뷰 카페 휴식 : <span class="place-title">갓바위 해상보행교 & 평화광장</span> ➔ <span class="place-title">카페 차오르다</span>
+                <span class="time-title">13:30</span><br>
+                식사 후 산책 및 바다 뷰 카페 휴식 : <span class="place-title">갓바위 해상보행교 & 평화광장</span> ➔ <span class="place-title">카페 차오르다</span>
                 <div class="address-text">
                     📍 갓바위/평화광장: 전남 목포시 평화로 82 <a href="https://naver.me/xnh15eup" target="_blank" class="map-link">지도 보기 🗺️</a><br>
                     📍 카페 차오르다: 전남 목포시 미항로 141 <a href="https://naver.me/5xjpsOzw" target="_blank" class="map-link">지도 보기 🗺️</a>
@@ -229,7 +239,8 @@
 
             <div class="time-block">
                 <div class="drive-time">🚗 평화광장 ➔ 근대역사거리 (차량 약 15분 소요)</div><br>
-                <span class="time-title">14:30</span> - 원도심 스팟 관람 : <span class="place-title">목포근대역사관 (차창 관람/외관) 및 연희네슈퍼</span> 사진 촬영
+                <span class="time-title">14:30</span><br>
+                원도심 스팟 관람 : <span class="place-title">목포근대역사관 (차창 관람/외관) 및 연희네슈퍼</span> 사진 촬영
                 <div class="address-text">
                     📍 근대역사관 1호관: 전남 목포시 영산로29번길 6 <a href="https://naver.me/x67yMEXI" target="_blank" class="map-link">지도 보기 🗺️</a><br>
                     📍 연희네슈퍼 주소: 전남 목포시 시로 13-1
@@ -238,7 +249,8 @@
 
             <div class="time-block">
                 <div class="drive-time">🚗 근대역사거리 ➔ 케이블카 북항승강장 (차량 약 7분 소요)</div><br>
-                <span class="time-title">16:00</span> - <span class="place-title">목포해상케이블카 북항승강장</span> 탑승 ➔ 고하도 도착 ➔ <span class="place-title">고하도전망대, 해상데크 & 커피파나쉐 전망대점</span>
+                <span class="time-title">16:00</span><br>
+                <span class="place-title">목포해상케이블카 북항승강장</span> 탑승 ➔ 고하도 도착 ➔ <span class="place-title">고하도전망대, 해상데크 & 커피파나쉐 전망대점</span>
                 <div class="address-text">
                     📍 북항승강장: 전남 목포시 해양대학로 240 <a href="https://naver.me/FPn5pq8c" target="_blank" class="map-link">지도 보기 🗺️</a><br>
                     📍 고하도전망대/데크: 전남 목포시 고하도안길 182 <a href="https://naver.me/F0z2U671" target="_blank" class="map-link">지도 보기 🗺️</a><br>
@@ -248,7 +260,8 @@
 
             <div class="time-block">
                 <div class="drive-time">🚗 케이블카 ➔ 숙소 인근 식당 (차량 약 10분 소요)</div><br>
-                <span class="time-title">19:00</span> - 숙소 인근 저녁 식사 & 반주 🍶 : <span class="place-title">목포연희네낙지꼬막집 유달산케이블카점</span> (낙지/꼬막 요리)
+                <span class="time-title">19:00</span><br>
+                숙소 인근 저녁 식사 & 반주 🍶 : <span class="place-title">목포연희네낙지꼬막집 유달산케이블카점</span> (낙지/꼬막 요리)
                 <div class="address-text">
                     📍 주소: 전남 목포시 유달산길 20<br>
                     <a href="https://naver.me/Gn0yeDkv" target="_blank" class="map-link">네이버 지도 보기 🗺️</a>
@@ -257,7 +270,8 @@
 
             <div class="time-block">
                 <div class="drive-time">🚶 식당 ➔ 로데오광장/숙소 (도보/차량 5분)</div><br>
-                <span class="time-title">20:30</span> - 원도심 로데오거리 및 먹자골목 도보 산책 ➔ <span class="place-title">호텔 우인</span> 체크인 및 휴식 푹 쉬기 🌙
+                <span class="time-title">20:30</span><br>
+                원도심 로데오거리 및 먹자골목 도보 산책 ➔ <span class="place-title">호텔 우인</span> 체크인 및 휴식 푹 쉬기 🌙
                 <div class="address-text">
                     📍 호텔 우인 주소: 전남 목포시 영산로59번길 16<br>
                     <a href="https://naver.me/xTT6VyS8" target="_blank" class="map-link">네이버 지도 보기 🗺️</a>
@@ -268,12 +282,14 @@
         <h3>8월 14일 (2일 차) : 유달산 근린공원&스카이워크 ➔ 영란횟집(민어) ➔ 도로변 큰길 계곡 ➔ 익산 복귀</h3>
         <div class="timeline">
             <div class="time-block">
-                <span class="time-title">08:30</span> - 호텔 우인 조식 식사 후 체크아웃 ☕
+                <span class="time-title">08:30</span><br>
+                호텔 우인 조식 식사 후 체크아웃 ☕
             </div>
 
             <div class="time-block">
                 <div class="drive-time">🚗 호텔 우인 ➔ 유달산 근린공원 / 달성공원 (차량 약 5분 소요)</div><br>
-                <span class="time-title">09:30</span> - 오전 산책 : <span class="place-title">유달산 근린공원 / 달성공원 숲길</span> 산책
+                <span class="time-title">09:30</span><br>
+                오전 산책 : <span class="place-title">유달산 근린공원 / 달성공원 숲길</span> 산책
                 <div class="address-text">
                     📍 달성공원 주소: 전남 목포시 죽교동 산27-1 <a href="https://naver.me/Ge7F9J0n" target="_blank" class="map-link">지도 보기 🗺️</a><br>
                     📍 유달산 노적봉: 전남 목포시 유달산길 56
@@ -282,7 +298,8 @@
 
             <div class="time-block">
                 <div class="drive-time">🚗 유달산 ➔ 목포 스카이워크 (차량 약 5분 소요)</div><br>
-                <span class="time-title">10:40</span> - 탁 트인 바다 전망 : <span class="place-title">목포 스카이워크 (대반동 유달유원지)</span> 관람
+                <span class="time-title">10:40</span><br>
+                탁 트인 바다 전망 : <span class="place-title">목포 스카이워크 (대반동 유달유원지)</span> 관람
                 <div class="address-text">
                     📍 주소: 전남 목포시 해양대학로 59<br>
                     <a href="https://naver.me/xyTn3KQe" target="_blank" class="map-link">네이버 지도 보기 🗺️</a>
@@ -291,7 +308,8 @@
 
             <div class="time-block">
                 <div class="drive-time">🚗 스카이워크 ➔ 영란횟집 (차량 약 7분 소요)</div><br>
-                <span class="time-title">11:30</span> - 점심 식사 : <span class="place-title">영란횟집</span> (목포 5미 대표 보양식 '민어 코스 요리/민어전/민어탕')
+                <span class="time-title">11:30</span><br>
+                점심 식사 : <span class="place-title">영란횟집</span> (목포 5미 대표 보양식 '민어 코스 요리/민어전/민어탕')
                 <div class="address-text">
                     📍 주소: 전남 목포시 번화로 42-1<br>
                     <a href="https://naver.me/xY4sr0g7" target="_blank" class="map-link">네이버 지도 보기 🗺️</a>
@@ -300,7 +318,8 @@
 
             <div class="time-block">
                 <div class="drive-time">🚗 목포 ➔ 도로변 큰길 계곡 (차량 약 50분 소요, 백양사IC/창평IC 인근)</div><br>
-                <span class="time-title">13:00</span> - 목포 출발 ➔ <span class="place-title">큰 도로변 평지 계곡 휴식 (택1)</span> 💧
+                <span class="time-title">13:00</span><br>
+                목포 출발 ➔ <span class="place-title">큰 도로변 평지 계곡 휴식 (택1)</span> 💧
                 <div class="address-text">
                     📍 [추천1] 장성 백양사 입구 계곡 (가인마을 초입): 전남 장성군 북하면 약수리 (큰길 바로 옆)<br>
                     📍 [추천2] 담양 가사문학면 지곡리 계곡: 전남 담양군 가사문학면 지곡리 (가사문학로 큰길 옆)
@@ -309,7 +328,8 @@
 
             <div class="time-block">
                 <div class="drive-time">🚗 계곡 ➔ 익산 복귀 (차량 약 50분 소요)</div><br>
-                <span class="time-title">15:30</span> - 익산으로 복귀 출발 (16:30경 익산 도착 예정) 🏡
+                <span class="time-title">15:30</span><br>
+                익산으로 복귀 출발 (16:30경 익산 도착 예정) 🏡
             </div>
         </div>
     </div>
@@ -446,9 +466,10 @@
                         <td><b>담양 지곡리 계곡</b></td>
                         <td>전남 담양군 가사문학면 지곡리</td>
                         <td>-</td>
-                </tr>
-            </tbody>
-        </table>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 
 </body>
