@@ -3,87 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>70대 시어머니와 함께하는 목포 1박 2일 여행 일정</title>
+    <title>어머니와 함께하는 목포 1박 2일 여행 일정</title>
+    <!-- 아기자기한 폰트 불러오기 (Gowun Dodum & Gamja Flower) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Gowun+Dodum&display=swap" rel="stylesheet">
+    
     <style>
         body {
-            font-family: 'Malgun Gothic', '맑은 고딕', sans-serif;
-            line-height: 1.6;
-            color: #333;
+            font-family: 'Gowun Dodum', sans-serif;
+            line-height: 1.7;
+            color: #5a4b41;
             max-width: 900px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #f8f9fa;
+            background-color: #fcf8f2; /* 따뜻한 크림 베이지 배경 */
         }
         h1 {
-            color: #1e3a8a;
-            border-bottom: 3px solid #1e3a8a;
-            padding-bottom: 10px;
+            font-family: 'Gamja Flower', cursive;
+            font-size: 2.2em;
+            color: #d96b27; /* 따뜻한 감성 코랄/오렌지 */
             text-align: center;
+            background: #fff5eb;
+            padding: 15px;
+            border-radius: 20px;
+            border: 2px dashed #fcd0a1;
+            margin-bottom: 25px;
         }
         h2 {
-            color: #1e40af;
-            background-color: #e0e7ff;
-            padding: 8px 15px;
-            border-radius: 5px;
+            font-family: 'Gamja Flower', cursive;
+            font-size: 1.6em;
+            color: #8b5e34;
+            background-color: #fceade;
+            padding: 8px 18px;
+            border-radius: 15px;
             margin-top: 30px;
+            display: inline-block;
         }
         h3 {
-            color: #0f766e;
-            border-left: 4px solid #0f766e;
+            color: #d97736;
+            border-left: 4px solid #fcd0a1;
             padding-left: 10px;
+            font-size: 1.15em;
+            margin-top: 20px;
         }
         .section {
             background: #ffffff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            padding: 22px;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(217, 107, 39, 0.08);
             margin-bottom: 25px;
+            border: 1px solid #f7e7d8;
         }
         
-        /* 일정 스타일 */
+        /* 타임라인 스타일 */
         .timeline {
-            border-left: 3px solid #3b82f6;
-            padding-left: 15px;
+            border-left: 3px dotted #fcd0a1;
+            padding-left: 18px;
             margin-left: 10px;
         }
         .time-block {
-            margin-bottom: 20px;
+            margin-bottom: 22px;
             position: relative;
         }
         .time-title {
             font-weight: bold;
-            color: #1d4ed8;
+            color: #d96b27;
+            background: #fff5eb;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 0.95em;
         }
         .place-title {
             font-weight: bold;
-            color: #1e293b;
+            color: #4a3b32;
         }
         .address-text {
-            font-size: 0.88em;
-            color: #64748b;
-            margin-top: 2px;
+            font-size: 0.9em;
+            color: #8c7a6b;
+            margin-top: 4px;
             padding-left: 10px;
-            border-left: 2px solid #cbd5e1;
+            border-left: 2px solid #fceade;
         }
         .map-link {
-            color: #2563eb;
+            color: #e07a5f;
             text-decoration: none;
             font-weight: bold;
             font-size: 0.9em;
+            background: #fff0eb;
+            padding: 2px 6px;
+            border-radius: 6px;
         }
         .map-link:hover {
-            text-decoration: underline;
+            background: #fcd0a1;
+            color: #fff;
         }
         .drive-time {
             display: inline-block;
-            background-color: #f1f5f9;
-            color: #475569;
-            font-size: 0.82em;
+            background-color: #fff9f0;
+            color: #b07d5b;
+            font-size: 0.85em;
             font-weight: bold;
-            padding: 2px 8px;
+            padding: 3px 10px;
             border-radius: 12px;
             margin-bottom: 6px;
-            border: 1px solid #e2e8f0;
+            border: 1px solid #fceade;
         }
 
         /* 레이아웃 맵 스타일 */
@@ -96,66 +120,71 @@
         }
         .map-zone {
             flex: 1;
-            min-width: 250px;
-            background-color: #f1f5f9;
-            border: 1px solid #cbd5e1;
-            border-radius: 8px;
+            min-width: 240px;
+            background-color: #fffaf5;
+            border: 1px solid #fceade;
+            border-radius: 15px;
             padding: 15px;
         }
         .map-zone-title {
-            font-weight: bold;
-            font-size: 1.1em;
+            font-family: 'Gamja Flower', cursive;
+            font-size: 1.3em;
             text-align: center;
-            padding-bottom: 8px;
-            margin-bottom: 10px;
-            border-bottom: 2px solid #64748b;
+            padding-bottom: 6px;
+            margin-bottom: 12px;
+            border-bottom: 2px dashed #fcd0a1;
         }
-        .map-zone.west { border-top: 4px solid #ef4444; }
-        .map-zone.center { border-top: 4px solid #3b82f6; }
-        .map-zone.east { border-top: 4px solid #10b981; }
+        .map-zone.west { border-top: 5px solid #f2cc8f; }
+        .map-zone.center { border-top: 5px solid #e07a5f; }
+        .map-zone.east { border-top: 5px solid #81b29a; }
         
         .pin-item {
             background: white;
             padding: 8px 12px;
             margin-bottom: 8px;
-            border-radius: 5px;
-            border-left: 3px solid #94a3b8;
-            font-size: 0.95em;
+            border-radius: 10px;
+            border-left: 3px solid #fcd0a1;
+            font-size: 0.92em;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
         }
 
         /* 테이블 스타일 */
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 10px;
+            margin-top: 12px;
             background: white;
+            border-radius: 12px;
+            overflow: hidden;
         }
         th, td {
-            border: 1px solid #cbd5e1;
+            border: 1px solid #fceade;
             padding: 10px 12px;
             text-align: left;
+            font-size: 0.92em;
         }
         th {
-            background-color: #f1f5f9;
-            color: #334155;
+            background-color: #fff5eb;
+            color: #8b5e34;
+            font-weight: bold;
         }
         .category-tag {
             display: inline-block;
             padding: 2px 8px;
-            border-radius: 4px;
+            border-radius: 8px;
             font-size: 0.85em;
             font-weight: bold;
             color: white;
         }
-        .tag-hotel { background-color: #6366f1; }
-        .tag-cafe { background-color: #f59e0b; }
-        .tag-spot { background-color: #10b981; }
-        .tag-food { background-color: #ef4444; }
+        .tag-hotel { background-color: #9d818b; }
+        .tag-cafe { background-color: #f2cc8f; color: #5a4b41; }
+        .tag-spot { background-color: #81b29a; }
+        .tag-food { background-color: #e07a5f; }
     </style>
 </head>
 <body>
 
-    <h1>🌊 목포 1박 2일 여행 일정 & 가이드</h1>
+    <h1>🍊 어머니와 함께하는 목포 1박 2일 여행 가이드 🌿</h1>
 
     <!-- 1. 일정 안내 -->
     <div class="section">
@@ -164,7 +193,7 @@
         <h3>8월 13일 (1일 차) : 독천골 낙지 ➔ 바다뷰카페 ➔ 원도심 ➔ 케이블카/고하도 ➔ 숙소 근처 저녁(반주🍶) & 로데오거리 산책</h3>
         <div class="timeline">
             <div class="time-block">
-                <span class="time-title">10:50</span> - <b>익산에서 목포로 출발</b>
+                <span class="time-title">10:50</span> - <b>익산에서 목포로 출발 🚗</b>
             </div>
             
             <div class="time-block">
@@ -174,35 +203,36 @@
             </div>
 
             <div class="time-block">
-                <div class="drive-time">🚗 독천골 ➔ 갓바위/평화광장 ➔ 카페 (차량 3~5분 소요)</div><br>
-                <span class="time-title">13:40</span> - 산책 및 바다 뷰 카페 휴식 : <span class="place-title">갓바위 해상보행교 & 평화광장</span> ➔ <span class="place-title">카페 차오르다</span>
-                <div class="address-text">📍 갓바위/평화광장: 전남 목포시 평화로 82 | <a href="https://naver.me/xnh15eup" target="_blank" class="map-link">네이버 지도 보기</a></div>
-                <div class="address-text">📍 카페 차오르다: 전남 목포시 미항로 141 | <a href="https://naver.me/5xjpsOzw" target="_blank" class="map-link">네이버 지도 보기</a></div>
+                <div class="drive-time">🚗 독천골 ➔ 갓바위/평화광장 ➔ 차오르다 카페 (차량 약 3~5분 소요)</div><br>
+                <span class="time-title">13:30</span> - 식사 후 산책 및 바다 뷰 카페 휴식 : <span class="place-title">갓바위 해상보행교 & 평화광장</span> ➔ <span class="place-title">카페 차오르다</span>
+                <div class="address-text">📍 갓바위/평화광장: 전남 목포시 평화로 82 | <a href="https://naver.me/xnh15eup" target="_blank" class="map-link">네이버 지도 보기 🗺️</a></div>
+                <div class="address-text">📍 카페 차오르다: 전남 목포시 미항로 141 | <a href="https://naver.me/5xjpsOzw" target="_blank" class="map-link">네이버 지도 보기 🗺️</a></div>
             </div>
 
             <div class="time-block">
                 <div class="drive-time">🚗 평화광장 ➔ 근대역사거리 (차량 약 15분 소요)</div><br>
-                <span class="time-title">15:30</span> - 원도심 스팟 관람 : <span class="place-title">목포근대역사관 (차창 관람/외관) 및 연희네슈퍼</span>
-                <div class="address-text">📍 근대역사관 1호관: 전남 목포시 영산로29번길 6 | <a href="https://naver.me/x67yMEXI" target="_blank" class="map-link">네이버 지도 보기</a></div>
-                <div class="address-text">📍 연희네슈퍼: 전남 목포시 시로 13-1</div>
+                <span class="time-title">14:30</span> - 원도심 스팟 관람 : <span class="place-title">목포근대역사관 (차창 관람/외관) 및 연희네슈퍼</span> 사진 촬영
+                <div class="address-text">📍 근대역사관 1호관: 전남 목포시 영산로29번길 6 | <a href="https://naver.me/x67yMEXI" target="_blank" class="map-link">네이버 지도 보기 🗺️</a></div>
+                <div class="address-text">📍 연희네슈퍼 주소: 전남 목포시 시로 13-1</div>
             </div>
 
             <div class="time-block">
-                <div class="drive-time">🚗 근대역사거리 ➔ 북항승강장 (차량 약 7분 소요)</div><br>
-                <span class="time-title">16:30</span> - <span class="place-title">목포해상케이블카 북항승강장</span> 탑승 ➔ 고하도 도착 ➔ <span class="place-title">고하도전망대, 해상데크 & 커피파나쉐 전망대점</span>
-                <div class="address-text">📍 북항승강장: 전남 목포시 해양대학로 240 | <a href="https://naver.me/FPn5pq8c" target="_blank" class="map-link">네이버 지도 보기</a></div>
-                <div class="address-text">📍 커피파나쉐 전망대점: 전남 목포시 고하도안길 185 | <a href="https://naver.me/58NKnVs8" target="_blank" class="map-link">네이버 지도 보기</a></div>
+                <div class="drive-time">🚗 근대역사거리 ➔ 케이블카 북항승강장 (차량 약 7분 소요)</div><br>
+                <span class="time-title">16:00</span> - <span class="place-title">목포해상케이블카 북항승강장</span> 탑승 ➔ 고하도 도착 ➔ <span class="place-title">고하도전망대, 해상데크 & 커피파나쉐 전망대점</span>
+                <div class="address-text">📍 북항승강장: 전남 목포시 해양대학로 240 | <a href="https://naver.me/FPn5pq8c" target="_blank" class="map-link">네이버 지도 보기 🗺️</a></div>
+                <div class="address-text">📍 고하도전망대/데크: 전남 목포시 고하도안길 182</div>
+                <div class="address-text">📍 커피파나쉐 전망대점: 전남 목포시 고하도안길 185 | <a href="https://naver.me/58NKnVs8" target="_blank" class="map-link">네이버 지도 보기 🗺️</a></div>
             </div>
 
             <div class="time-block">
                 <div class="drive-time">🚗 케이블카 ➔ 숙소 인근 식당 (차량 약 10분 소요)</div><br>
                 <span class="time-title">19:00</span> - 숙소 인근 저녁 식사 & 반주 🍶 : <span class="place-title">목포연희네낙지꼬막집 유달산케이블카점</span> (낙지/꼬막 요리)
-                <div class="address-text">📍 주소: 전남 목포시 유달산길 20 | <a href="https://naver.me/Gn0yeDkv" target="_blank" class="map-link">네이버 지도 보기</a></div>
+                <div class="address-text">📍 주소: 전남 목포시 유달산길 20 | <a href="https://naver.me/Gn0yeDkv" target="_blank" class="map-link">네이버 지도 보기 🗺️</a></div>
             </div>
 
             <div class="time-block">
                 <div class="drive-time">🚶 식당 ➔ 로데오광장/숙소 (도보/차량 5분)</div><br>
-                <span class="time-title">20:30</span> - 편안하게 약주 후 원도심 로데오거리 및 먹자골목 도보 산책 ➔ <span class="place-title">호텔 우인</span> 체크인 및 휴식
+                <span class="time-title">20:30</span> - 원도심 로데오거리 및 먹자골목 도보 산책 ➔ <span class="place-title">호텔 우인</span> 체크인 및 휴식 푹 쉬기 🌙
                 <div class="address-text">📍 호텔 우인 주소: 전남 목포시 영산로59번길 16</div>
             </div>
         </div>
@@ -210,12 +240,12 @@
         <h3>8월 14일 (2일 차) : 달성공원&유달산 ➔ 영란횟집(민어) ➔ 장성 방장산휴양림 계곡 ➔ 익산 복귀</h3>
         <div class="timeline">
             <div class="time-block">
-                <span class="time-title">08:30</span> - 호텔 우인 조식 식사 후 체크아웃
+                <span class="time-title">08:30</span> - 호텔 우인 조식 식사 후 체크아웃 ☕
             </div>
 
             <div class="time-block">
                 <div class="drive-time">🚗 호텔 우인 ➔ 달성공원/유달산 (차량 약 5분 소요)</div><br>
-                <span class="time-title">09:30</span> - 오전 산책 : <span class="place-title">달성공원 (그늘 숲 산책)</span> 및 <span class="place-title">유달산 노적봉 조망</span>
+                <span class="time-title">09:30</span> - 오전 상쾌한 산책 : <span class="place-title">달성공원 (그늘 숲 산책)</span> 및 <span class="place-title">유달산 노적봉 조망</span>
                 <div class="address-text">📍 달성공원: 전남 목포시 죽교동 산27-1</div>
                 <div class="address-text">📍 유달산 노적봉: 전남 목포시 유달산길 56</div>
             </div>
@@ -223,18 +253,18 @@
             <div class="time-block">
                 <div class="drive-time">🚗 유달산 ➔ 영란횟집 (차량 약 5분 소요)</div><br>
                 <span class="time-title">11:30</span> - 점심 식사 : <span class="place-title">영란횟집</span> (목포 5미 대표 보양식 '민어 코스 요리/민어전/민어탕')
-                <div class="address-text">📍 주소: 전남 목포시 번화로 42-1 | <a href="https://naver.me/xY4sr0g7" target="_blank" class="map-link">네이버 지도 보기</a></div>
+                <div class="address-text">📍 주소: 전남 목포시 번화로 42-1 | <a href="https://naver.me/xY4sr0g7" target="_blank" class="map-link">네이버 지도 보기 🗺️</a></div>
             </div>
 
             <div class="time-block">
                 <div class="drive-time">🚗 목포 ➔ 장성 방장산 자연휴양림 (차량 약 50분 소요)</div><br>
-                <span class="time-title">13:00</span> - 목포 출발 ➔ <span class="place-title">장성 방장산 자연휴양림 (편백숲 산책 & 시원한 계곡 휴식)</span>
+                <span class="time-title">13:00</span> - 목포 출발 ➔ <span class="place-title">장성 방장산 자연휴양림 (편백숲 산책 & 시원한 계곡 휴식)</span> 🌲💧
                 <div class="address-text">📍 주소: 전남 장성군 북이면 방장로 353</div>
             </div>
 
             <div class="time-block">
                 <div class="drive-time">🚗 장성 ➔ 익산 복귀 (차량 약 50분 소요)</div><br>
-                <span class="time-title">15:30</span> - 익산으로 복귀 출발 (16:30경 익산 도착 예정)
+                <span class="time-title">15:30</span> - 익산으로 복귀 출발 (16:30경 익산 도착 예정) 🏡
             </div>
         </div>
     </div>
@@ -246,7 +276,7 @@
         <div class="map-container">
             <!-- 서부 권역 -->
             <div class="map-zone west">
-                <div class="map-zone-title" style="color: #ef4444;">[북항 / 고하도 권역]</div>
+                <div class="map-zone-title" style="color: #d97736;">[북항 / 고하도 권역]</div>
                 <div class="pin-item">📍 <b>케이블카 북항승강장</b></div>
                 <div class="pin-item">📍 <b>고하도 전망대 & 데크</b></div>
                 <div class="pin-item">📍 <b>커피파나쉐 전망대점</b></div>
@@ -254,8 +284,8 @@
 
             <!-- 중앙 권역 -->
             <div class="map-zone center">
-                <div class="map-zone-title" style="color: #3b82f6;">[원도심 / 유달산 권역]</div>
-                <div class="pin-item" style="border-left-color: #6366f1;">🏢 <b>호텔 우인 (숙소)</b></div>
+                <div class="map-zone-title" style="color: #e07a5f;">[원도심 / 유달산 권역]</div>
+                <div class="pin-item" style="border-left-color: #9d818b;">🏢 <b>호텔 우인 (숙소)</b></div>
                 <div class="pin-item">📍 <b>근대역사관 & 연희네슈퍼</b></div>
                 <div class="pin-item">📍 <b>달성공원 & 유달산 노적봉</b></div>
                 <div class="pin-item">📍 <b>목포연희네낙지꼬막집</b> (유달산점)</div>
@@ -265,7 +295,7 @@
 
             <!-- 동부 권역 -->
             <div class="map-zone east">
-                <div class="map-zone-title" style="color: #10b981;">[신도심 / 평화광장 권역]</div>
+                <div class="map-zone-title" style="color: #81b29a;">[신도심 / 평화광장 권역]</div>
                 <div class="pin-item">📍 <b>갓바위 & 평화광장</b></div>
                 <div class="pin-item">📍 <b>카페 차오르다</b> (바다뷰)</div>
                 <div class="pin-item">📍 <b>독천골</b> (낙지 요리 전문점)</div>
@@ -302,43 +332,43 @@
                     <td><span class="category-tag tag-spot">관광</span></td>
                     <td><b>갓바위 / 평화광장</b></td>
                     <td>전남 목포시 평화로 82</td>
-                    <td><a href="https://naver.me/xnh15eup" target="_blank" class="map-link">링크</a></td>
+                    <td><a href="https://naver.me/xnh15eup" target="_blank" class="map-link">링크 🗺️</a></td>
                 </tr>
                 <tr>
                     <td><span class="category-tag tag-cafe">카페</span></td>
                     <td><b>카페 차오르다</b></td>
                     <td>전남 목포시 미항로 141</td>
-                    <td><a href="https://naver.me/5xjpsOzw" target="_blank" class="map-link">링크</a></td>
+                    <td><a href="https://naver.me/5xjpsOzw" target="_blank" class="map-link">링크 🗺️</a></td>
                 </tr>
                 <tr>
                     <td><span class="category-tag tag-spot">관광</span></td>
                     <td><b>목포근대역사관 1호관</b></td>
                     <td>전남 목포시 영산로29번길 6</td>
-                    <td><a href="https://naver.me/x67yMEXI" target="_blank" class="map-link">링크</a></td>
+                    <td><a href="https://naver.me/x67yMEXI" target="_blank" class="map-link">링크 🗺️</a></td>
                 </tr>
                 <tr>
                     <td><span class="category-tag tag-spot">관광</span></td>
                     <td><b>목포해상케이블카 북항승강장</b></td>
                     <td>전남 목포시 해양대학로 240</td>
-                    <td><a href="https://naver.me/FPn5pq8c" target="_blank" class="map-link">링크</a></td>
+                    <td><a href="https://naver.me/FPn5pq8c" target="_blank" class="map-link">링크 🗺️</a></td>
                 </tr>
                 <tr>
                     <td><span class="category-tag tag-cafe">카페</span></td>
                     <td><b>커피파나쉐 전망대점</b></td>
                     <td>전남 목포시 고하도안길 185</td>
-                    <td><a href="https://naver.me/58NKnVs8" target="_blank" class="map-link">링크</a></td>
+                    <td><a href="https://naver.me/58NKnVs8" target="_blank" class="map-link">링크 🗺️</a></td>
                 </tr>
                 <tr>
                     <td><span class="category-tag tag-food">식당</span></td>
                     <td><b>목포연희네낙지꼬막집 (저녁)</b></td>
                     <td>전남 목포시 유달산길 20</td>
-                    <td><a href="https://naver.me/Gn0yeDkv" target="_blank" class="map-link">링크</a></td>
+                    <td><a href="https://naver.me/Gn0yeDkv" target="_blank" class="map-link">링크 🗺️</a></td>
                 </tr>
                 <tr>
                     <td><span class="category-tag tag-food">식당</span></td>
                     <td><b>영란횟집</b></td>
                     <td>전남 목포시 번화로 42-1</td>
-                    <td><a href="https://naver.me/xY4sr0g7" target="_blank" class="map-link">링크</a></td>
+                    <td><a href="https://naver.me/xY4sr0g7" target="_blank" class="map-link">링크 🗺️</a></td>
                 </tr>
                 <tr>
                     <td><span class="category-tag tag-spot">경유</span></td>
